@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount Users::Engine => "/users"
+  mount NoCms::Admin::Users::Engine => "/users"
 end

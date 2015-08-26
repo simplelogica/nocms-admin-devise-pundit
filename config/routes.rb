@@ -1,2 +1,2 @@
-Users::Engine.routes.draw do
+NoCms::Admin::Users::Engine.routes.draw do
 end

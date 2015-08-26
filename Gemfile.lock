@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    users (0.0.1)
+    nocms-admin-devise-pundit (0.0.1)
       rails (~> 4.2.4)
 
 GEM
@@ -102,8 +102,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  nocms-admin-devise-pundit!
   sqlite3
-  users!
 
 BUNDLED WITH
    1.10.6
