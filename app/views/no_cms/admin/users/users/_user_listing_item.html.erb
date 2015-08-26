@@ -1,0 +1,7 @@
+<% current ||= nil %>
+<li <%= raw "class='#{user_listing_item_classes(user, current).join(' ')}'"%>>
+  <%= link_to user.email, edit_user_path(user)%>
+  <div class="mo">
+    <%= button_to '', user_path(user), method: :delete, class: "ico-mini-delete", title: t('.destroy') %>
+  </div>
+</li>

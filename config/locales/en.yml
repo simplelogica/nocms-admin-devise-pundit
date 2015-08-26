@@ -1,0 +1,25 @@
+en:
+  no_cms:
+    admin:
+      menu_items:
+        users: Users
+      users:
+        users:
+          create:
+            success: "User %{title} has been created"
+            error: "Some error was found and User %{title} couldn't be created"
+          destroy:
+            success: "User %{title} has been deleted"
+            error: "Some error was found and User %{title} couldn't be deleted"
+          edit:
+            log_messages: "User %{title} loaded for editing"
+            submit: 'Send'
+          new:
+            submit: 'Send'
+          user_listing_item:
+            destroy: Remove
+          toolbar_right:
+            submit: Save
+          update:
+            success: "User %{title} has been updated"
+            error: "Some error was found and User %{title} couldn't be updated"

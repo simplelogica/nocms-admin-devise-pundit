@@ -1,4 +1,4 @@
 module NoCms::Admin::Users
-  class Admin::Users::User < ActiveRecord::Base
+  class User < ActiveRecord::Base
   end
 end
