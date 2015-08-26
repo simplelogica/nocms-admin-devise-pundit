@@ -13,3 +13,4 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
+gem "nocms-admin", git: 'git@github.com:simplelogica/nocms-admin.git'
