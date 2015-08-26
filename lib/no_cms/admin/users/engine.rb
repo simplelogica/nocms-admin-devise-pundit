@@ -6,9 +6,13 @@ module NoCms::Admin::Users
     isolate_namespace NoCms::Admin::Users
 
     config.to_prepare do
+
       Dir.glob(NoCms::Admin::Users::Engine.root + "app/decorators/**/*_decorator*.rb").each do |c|
         require_dependency(c)
       end
+
+      Devise::SessionsController.layout "no_cms/admin/users/sessions"
+
     end
 
   end
