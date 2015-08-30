@@ -15,6 +15,7 @@ PATH
       devise (~> 3.5.0)
       nocms-admin (~> 0.0.1)
       rails (> 4.0.0, < 5)
+      rolify (~> 4.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -121,6 +122,7 @@ GEM
     rake (10.4.2)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
+    rolify (4.1.1)
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)

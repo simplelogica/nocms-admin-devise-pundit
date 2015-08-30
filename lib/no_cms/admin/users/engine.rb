@@ -1,5 +1,6 @@
 require 'nocms-admin'
 require 'devise'
+require 'rolify'
 
 module NoCms::Admin::Users
   class Engine < ::Rails::Engine
