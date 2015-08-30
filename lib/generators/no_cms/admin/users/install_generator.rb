@@ -7,9 +7,12 @@ module NoCms::Admin::Users
       generate 'devise:install'
     end
 
-
     def generate_initializer
       template "config/initializers/no_cms/admin/users.rb"
+    end
+
+    def generate_policy
+      template "app/policies/no_cms/admin/menu_policy.rb"
     end
 
   end
