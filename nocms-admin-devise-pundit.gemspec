@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency "nocms-admin", "~> 0.0.1"
   s.add_dependency "devise", "~> 3.5.0"
   s.add_dependency "rolify", "~> 4.1.1"
+  s.add_dependency "pundit", "~> 1.0.1"
 
   s.add_development_dependency "sqlite3"
 end
