@@ -11,8 +11,6 @@ module NoCms::Admin::Users
         require_dependency(c)
       end
 
-      Devise::SessionsController.layout "no_cms/admin/users/sessions"
-
     end
 
   end

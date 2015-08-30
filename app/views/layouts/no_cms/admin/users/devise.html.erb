@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= t 'layouts.no_cms.admin.application.cms_title' %></title>
+
+  <%= favicon_link_tag 'no_cms/admin/favicon.ico' %>
+  <%= favicon_link_tag 'no_cms/admin/favicon.png', type: 'image/png' %>
+  <%= favicon_link_tag 'no_cms/admin/favicon_iOS.png', rel: 'apple-touch-icon', type: 'image/png' %>
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
+
+  <%= stylesheet_link_tag  "no_cms/admin/application", media: "all" %>
+  <%= stylesheet_link_tag  "no_cms/admin/users/application", media: "all" %>
+  <%= yield :stylesheets %>
+  <%= render 'no_cms/admin/shared/extra_stylesheets' %>
+
+  <!-- GOOGLE FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="sessions">
+
+<section id="interface">
+  <header id="main-header">
+    <%= render 'main_header' %>
+  </header>
+</section>
+
+<section id="content-area">
+  <%= yield %>
+</section>
+
+
+</body>
+</html>

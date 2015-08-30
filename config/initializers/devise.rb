@@ -11,5 +11,5 @@ Devise.setup do |config|
   # The router that invoked `devise_for`, in the example above, would be:
   config.router_name = :no_cms_admin_users
 
-  config.parent_controller = 'NoCms::Admin::ApplicationController'
+  config.parent_controller = 'NoCms::Admin::Users::DeviseController'
 end
