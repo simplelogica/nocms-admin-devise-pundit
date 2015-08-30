@@ -3,6 +3,9 @@ en:
     admin:
       menu_items:
         users: Users
+      shared:
+        main_header:
+          logout: Logout
       users:
         users:
           create:
