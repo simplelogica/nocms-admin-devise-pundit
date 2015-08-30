@@ -63,7 +63,7 @@ module NoCms::Admin::Users
     end
 
     def user_params
-      user_params = params.require(:user).permit(:email)
+      user_params = params.require(:user).permit(:email, role_ids: [])
     end
 
   end

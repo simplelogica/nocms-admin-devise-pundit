@@ -1,6 +1,15 @@
 <div id="content_fields">
+
   <div class="row">
     <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
+
+  <div class="row">
+    <%= f.label :roles %>
+    <%= f.collection_check_boxes(:role_ids, NoCms::Admin::Users::Role.order(:name).each, :id, :name) do |b| %>
+      <% b.label { b.check_box + " #{b.text}" } %>
+    <% end -%>
+  </div>
+
 </div>
