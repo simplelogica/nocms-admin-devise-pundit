@@ -1,0 +1,23 @@
+body.sessions {
+
+  padding: 0;
+
+  #interface {
+
+    width:100%;
+
+    #main-header {
+      width: 100%;
+      position: static;
+    }
+
+  }
+
+  #content-area {
+    width: 90%;
+    max-width: 640px;
+    margin: 30px auto;
+    min-height: 0;
+    padding: 50px;
+  }
+}
