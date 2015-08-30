@@ -1,5 +1,5 @@
 class NoCms::Admin::MenuPolicy  < Struct.new(:user, :menu)
   def users?
-    true
+    user.has_role? :metadmin
   end
 end
