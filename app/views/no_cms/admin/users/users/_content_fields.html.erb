@@ -6,6 +6,16 @@
   </div>
 
   <div class="row">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div class="row">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div class="row">
     <%= f.label :roles %>
     <%= f.collection_check_boxes(:role_ids, NoCms::Admin::Users::Role.order(:name).each, :id, :name) do |b| %>
       <% b.label { b.check_box + " #{b.text}" } %>
